@@ -16,7 +16,7 @@
 title: Data-Driven Dynamics & Control 
 email: mohammadai2573@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-baseurl: "/website_test"
+baseurl: "" # The site is served from the root
 url: "https://bahmoh.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
 github_username:  BahMoh
