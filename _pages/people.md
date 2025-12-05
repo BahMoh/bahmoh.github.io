@@ -1,7 +1,7 @@
 ---
-title: "Orthotron - People"
+title: "DYNAMO - People"
 layout: gridlay
-excerpt: "Orthotron: People"
+excerpt: "DYNAMO: People"
 sitemap: false
 permalink: /people/
 ---
@@ -9,9 +9,9 @@ permalink: /people/
 # Team Members 
 
 
- **Current opportunities to join the team are listed here** [(see openings)]({{ site.url }}{{ site.baseurl }}/contact) ****
+ <!-- **Current opportunities to join the team are listed here** [(see openings)]({{ site.url }}{{ site.baseurl }}/contact) **** -->
 
-## Principal Investigator
+## Lab Director
 {% assign number_printed = 0 %}
 {% for member in site.data.team_members %}
 
