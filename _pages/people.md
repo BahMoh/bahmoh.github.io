@@ -26,7 +26,7 @@ permalink: /people/
   <h4>{{ member.name }}</h4>
   <i>{{ member.info }}</i><br>
   {% if member.number_email == 1 %}
-  email: <{{ member.email }}>
+  email: <{{ member.email }}> 
   {% endif %}
   {% if member.number_email == 2 %}
   email1: <{{ member.email1 }}><br>
