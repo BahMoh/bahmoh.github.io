@@ -33,7 +33,7 @@ permalink: /people/
   email2: <{{ member.email2 }}>
   {% endif %}
   
-  <ul>
+  <ul style="clear: both;">
   
   {% if member.number_educ == 1 %}
   <li> {{ member.education1 }} </li>
