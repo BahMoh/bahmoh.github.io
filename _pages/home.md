@@ -6,7 +6,7 @@ sitemap: false
 permalink: /
 ---
 
-The Orthopaedic Mechatronics (orthotron) Laboratory in the Mechanical & Mechatronics Dept. at the [University of Waterloo](https://uwaterloo.ca/mechanical-mechatronics-engineering/) is focused on a multidisciplinary approach to develop and evaluate orthopaedic interventions, ranging from robotic manipulators to characterize bone-implant mechanics to wearable sensors for musculoskeletal rehabilitation monitoring.  
+The Data-Driven Dynamics Modeling and Control (DYNAMO) Laboratory at the [Western Norway University of Applied Sciences](https://www.hvl.no/en/) focuses on advancing robotics and intelligent control systems through rigorous mathematical modeling. The lab’s work centers on understanding the behavior of mechanical and robotic systems by extracting structure, patterns, and governing equations directly from data. This approach enables the development of more accurate models, adaptive controllers, and efficient algorithms for real-world robotic applications. Our research spans system identification, nonlinear dynamics, machine learning–based modeling, and control strategies designed to improve performance, robustness, and autonomy in modern robotic platforms.
 
 <figure class="third">
   <img src="{{ site.url }}{{ site.baseurl }}/images/students1.jpg" style="width: 600px">
