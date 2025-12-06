@@ -91,3 +91,12 @@ firstp {
     margin-right: 30px;
 }
 
+/* Show dropdown on hover */
+.navbar-nav > li.dropdown:hover > .dropdown-menu {
+    display: block;
+}
+
+/* Prevent the menu from disappearing immediately */
+.navbar-nav > li.dropdown:hover > a {
+    background-color: #eee;
+}
