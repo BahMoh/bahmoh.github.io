@@ -4,7 +4,7 @@ layout: default
 permalink: /experiments/Experiment_inverted_pendulum/
 ---
 
-## Ball and Beam System
+## Inverted Pendulum
 
 The **ball and beam** system is a classic **benchmark problem in control engineering** that is widely used to analyze and evaluate feedback control strategies.
 
