@@ -5,16 +5,6 @@ permalink: /experiments/Experiment_inverted_pendulum/
 ---
 
 
-<figure style="text-align: center;">
-  <img src="{{ site.baseurl }}/images/ballAndBeam/ball_and_beam_blockDiagram.png"
-       alt="Simulink model of the ball and beam system"
-       style="width:70%;">
-  <figcaption>
-    <b>Figure 1.</b> Simulink model of the ball and beam system.
-  </figcaption>
-</figure>
-
-
 ## Inverted Pendulum
 
 The **ball and beam** system is a classic **benchmark problem in control engineering** that is widely used to analyze and evaluate feedback control strategies.
