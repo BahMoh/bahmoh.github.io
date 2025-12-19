@@ -1,3 +1,9 @@
+---
+title: "Ball and Beam Experiment"
+layout: default
+permalink: /experiments/Experiment_ball_and_beam/
+---
+
 ## Ball and Beam System
 
 The **ball and beam** system is a classic **benchmark problem in control engineering** that is widely used to analyze and evaluate feedback control strategies.
