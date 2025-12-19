@@ -111,3 +111,12 @@ figcaption {
   padding: 10px;
   border-left: 4px solid #ccc;
 }
+
+.center-caption {
+  text-align: center;
+  background: none;  /* removes gray box */
+  padding: 0;        /* removes extra space */
+  border: none;      /* removes any border */
+  font-size: 0.9em;  /* optional styling */
+  color: #555;       /* optional styling */
+}
