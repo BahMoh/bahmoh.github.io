@@ -57,22 +57,13 @@ To set the sampling time and the solver type, right click on the model workspace
 </figcaption>
 </figure>
 
-<figure style="text-align: center;">
-  <img src="{{ site.baseurl }}/images/ballAndBeam/ball_and_beam_linear_model.png"
-       alt="Simulink model of the ball and beam system"
-       style="width:30%;">
-<figcaption style="text-align: center; background: none; padding: 0; border: none; font-size: 0.9em;">
-  Figure 3. Simulink model of the ball and beam system.
-</figcaption>
-</figure>
-
 
 <figure style="text-align: center;">
   <img src="{{ site.baseurl }}/images/ballAndBeam/ball_and_beam_SimulinkLibraryBrowser.png"
        alt="Simulink model of the ball and beam system"
        style="width:40%;">
 <figcaption style="text-align: center; background: none; padding: 0; border: none; font-size: 0.9em;">
-  Figure 4. Simulink model of the ball and beam system.
+  Figure 3. Simulink model of the ball and beam system.
 </figcaption>
 </figure>
 
@@ -82,10 +73,18 @@ To set the sampling time and the solver type, right click on the model workspace
        alt="Simulink model of the ball and beam system"
        style="width:60%;">
 <figcaption style="text-align: center; background: none; padding: 0; border: none; font-size: 0.9em;">
-  Figure 5. Simulink model of the ball and beam system.
+  Figure 4. Simulink model of the ball and beam system.
 </figcaption>
 </figure>
 
+<figure style="text-align: center;">
+  <img src="{{ site.baseurl }}/images/ballAndBeam/ball_and_beam_linear_model.png"
+       alt="Simulink model of the ball and beam system"
+       style="width:30%;">
+<figcaption style="text-align: center; background: none; padding: 0; border: none; font-size: 0.9em;">
+  Figure 5. Simulink model of the ball and beam system.
+</figcaption>
+</figure>
 
 <figure style="text-align: center;">
   <img src="{{ site.baseurl }}/images/ballAndBeam/ball_and_beam_blockParameterTheta.png"
