@@ -111,3 +111,10 @@ figcaption {
   padding: 10px;
   border-left: 4px solid #ccc;
 }
+
+.math {
+    display: inline;      /* ensures it behaves like text */
+    font-style: normal;   /* overrides any italic styles applied to captions */
+    font-size: 0.9em;     /* match your figcaption font size */
+    white-space: nowrap;  /* prevent line breaks inside math if desired */
+}
