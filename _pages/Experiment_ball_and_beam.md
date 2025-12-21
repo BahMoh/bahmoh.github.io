@@ -48,6 +48,8 @@ To set the sampling time and the solver type, right click on the model workspace
 </figcaption>
 </figure>
 
+Next, it is necessary to enter the initial values of the system model. To do this, right-click on the canvas, open the Model Properties, go to the Callbacks section, and enter the parameters in the InitFcn field as shown in Figure 2.
+
 <figure style="text-align: center;">
   <img src="{{ site.baseurl }}/images/ballAndBeam/ball_and_beam_SIMOpenLoop.png"
        alt="Setting the initial values of the system mode."
@@ -57,6 +59,7 @@ To set the sampling time and the solver type, right click on the model workspace
 </figcaption>
 </figure>
 
+It is necessary to use the SIMULINK library to add the components required for implementing the model, providing the appropriate input, and displaying the system output. For this purpose, in the Library Browser, under the Continuous, Source, and Sink sections, you can add the transfer function, step input, and output display (Scope) to the simulation environment, respectively. Figure 3 shows this section.
 
 <figure style="text-align: center;">
   <img src="{{ site.baseurl }}/images/ballAndBeam/ball_and_beam_SimulinkLibraryBrowser.png"
@@ -67,6 +70,7 @@ To set the sampling time and the solver type, right click on the model workspace
 </figcaption>
 </figure>
 
+After selecting the required components, we connect them to each other as shown in Figure 4. Then, by double-clicking on the TransferFcn block, we enter the parameters of the system’s linearized model into it.
 
 <figure style="text-align: center;">
   <img src="{{ site.baseurl }}/images/ballAndBeam/ball_and_beam_blockDiagram.png"
@@ -86,6 +90,8 @@ To set the sampling time and the solver type, right click on the model workspace
 </figcaption>
 </figure>
 
+To plot the step response of this system, we use the Step block. The parameters of this block are set according to the configuration shown in Figure 6:
+
 <figure style="text-align: center;">
   <img src="{{ site.baseurl }}/images/ballAndBeam/ball_and_beam_blockParameterTheta.png"
        alt="Setting the reference input parameters."
@@ -95,6 +101,8 @@ To set the sampling time and the solver type, right click on the model workspace
 </figcaption>
 </figure>
 
+As observed, in the open-loop system simulation, we have considered the reference input as an angular position of 0.2 radians. Additionally, to plot the step response of the system and record the data, we have used the Scope and To Workspace blocks. Using the To Workspace block, the output samples along with the simulation time can be imported into MATLAB’s workspace, allowing the output plot to be generated with higher quality. The settings for this block are shown in Figure 7.
+
 <figure style="text-align: center;">
   <img src="{{ site.baseurl }}/images/ballAndBeam/ball_and_beam_blockParameterOutput.png"
        alt="Setting the parameters of the **To Workspace** block."
@@ -103,6 +111,22 @@ To set the sampling time and the solver type, right click on the model workspace
   Figure 7. Setting the parameters of the **To Workspace** block.
 </figcaption>
 </figure>
+
+To run the simulation, after setting the simulation time in the Stop Time field, we start the simulation by selecting the Run option. Additionally, to plot the output, we execute the following commands in the MATLAB Editor environment:
+
+```bash
+Time = out.R_Out.time;
+R    = out.R_Out.signals.values;
+ 
+figure
+plot(Time , R , 'r' , 'linewidth' , 2)
+grid on
+xlabel('Time(sec)')
+ylabel('R')
+title('Output Chart')
+legend('R')
+
+```
 
 <figure style="text-align: center;">
   <img src="{{ site.baseurl }}/images/ballAndBeam/ball_and_beam_Output.png"
