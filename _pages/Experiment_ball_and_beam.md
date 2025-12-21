@@ -41,105 +41,105 @@ To set the sampling time and the solver type, right click on the model workspace
 
 <figure style="text-align: center;">
   <img src="{{ site.baseurl }}/images/ballAndBeam/ball_and_beam_configuration.png"
-       alt="Simulink model of the ball and beam system"
+       alt="Solver settings and sampling time in the simulation."
        style="width:70%;">
 <figcaption style="text-align: center; background: none; padding: 0; border: none; font-size: 0.9em;">
-  Figure 1. Simulink model of the ball and beam system.
+  Figure 1. Solver settings and sampling time in the simulation.
 </figcaption>
 </figure>
 
 <figure style="text-align: center;">
   <img src="{{ site.baseurl }}/images/ballAndBeam/ball_and_beam_SIMOpenLoop.png"
-       alt="Simulink model of the ball and beam system"
+       alt="Setting the initial values of the system mode."
        style="width:40%;">
 <figcaption style="text-align: center; background: none; padding: 0; border: none; font-size: 0.9em;">
-  Figure 2. Simulink model of the ball and beam system.
+  Figure 2. Setting the initial values of the system model.
 </figcaption>
 </figure>
 
 
 <figure style="text-align: center;">
   <img src="{{ site.baseurl }}/images/ballAndBeam/ball_and_beam_SimulinkLibraryBrowser.png"
-       alt="Simulink model of the ball and beam system"
+       alt="Selecting the required components to implement the system model and applying inputs to it."
        style="width:40%;">
 <figcaption style="text-align: center; background: none; padding: 0; border: none; font-size: 0.9em;">
-  Figure 3. Simulink model of the ball and beam system.
+  Figure 3. Selecting the required components to implement the system model and applying inputs to it.
 </figcaption>
 </figure>
 
 
 <figure style="text-align: center;">
   <img src="{{ site.baseurl }}/images/ballAndBeam/ball_and_beam_blockDiagram.png"
-       alt="Simulink model of the ball and beam system"
+       alt="Implementing the open-loop system in the SIMULINK environment."
        style="width:60%;">
 <figcaption style="text-align: center; background: none; padding: 0; border: none; font-size: 0.9em;">
-  Figure 4. Simulink model of the ball and beam system.
+  Figure 4. Implementing the open-loop system in the SIMULINK environment.
 </figcaption>
 </figure>
 
 <figure style="text-align: center;">
   <img src="{{ site.baseurl }}/images/ballAndBeam/ball_and_beam_linear_model.png"
-       alt="Simulink model of the ball and beam system"
+       alt="Setting the parameters of the ball and beam system model"
        style="width:30%;">
 <figcaption style="text-align: center; background: none; padding: 0; border: none; font-size: 0.9em;">
-  Figure 5. Simulink model of the ball and beam system.
+  Figure 5. Setting the parameters of the ball and beam system model.
 </figcaption>
 </figure>
 
 <figure style="text-align: center;">
   <img src="{{ site.baseurl }}/images/ballAndBeam/ball_and_beam_blockParameterTheta.png"
-       alt="Simulink model of the ball and beam system"
+       alt="Setting the reference input parameters."
        style="width:30%;">
 <figcaption style="text-align: center; background: none; padding: 0; border: none; font-size: 0.9em;">
-  Figure 6. Simulink model of the ball and beam system.
+  Figure 6. Setting the reference input parameters.
 </figcaption>
 </figure>
 
 <figure style="text-align: center;">
   <img src="{{ site.baseurl }}/images/ballAndBeam/ball_and_beam_blockParameterOutput.png"
-       alt="Simulink model of the ball and beam system"
+       alt="Setting the parameters of the **To Workspace** block."
        style="width:30%;">
 <figcaption style="text-align: center; background: none; padding: 0; border: none; font-size: 0.9em;">
-  Figure 7. Simulink model of the ball and beam system.
+  Figure 7. Setting the parameters of the **To Workspace** block.
 </figcaption>
 </figure>
 
 <figure style="text-align: center;">
   <img src="{{ site.baseurl }}/images/ballAndBeam/ball_and_beam_Output.png"
-       alt="Simulink model of the ball and beam system"
+       alt="Step response plot of the open-loop system for a step input with an amplitude of 0.2 radians"
        style="width:40%;">
 <figcaption style="text-align: center; background: none; padding: 0; border: none; font-size: 0.9em;">
-  Figure 8. Simulink model of the ball and beam system.
+  Figure 8. Step response plot of the open-loop system for a step input with an amplitude of 0.2 radians.
 </figcaption>
 </figure>
 
 
 <figure style="text-align: center;">
   <img src="{{ site.baseurl }}/images/ballAndBeam/ball_and_beam_blockDiagramClosedLoop.png"
-       alt="Simulink model of the ball and beam system"
+       alt="Implementing the closed-loop system with a proportional controller in the SIMULINK environment"
        style="width:60%;">
 <figcaption style="text-align: center; background: none; padding: 0; border: none; font-size: 0.9em;">
-  Figure 9. Simulink model of the ball and beam system.
+  Figure 9. Implementing the closed-loop system with a proportional controller in the SIMULINK environment.
 </figcaption>
 </figure>
 
 
 <figure style="text-align: center;">
   <img src="{{ site.baseurl }}/images/ballAndBeam/ball_and_beam_RootLocus.png"
-       alt="Simulink model of the ball and beam system"
+       alt="Root locus plot of the ball and beam system."
        style="width:40%;">
 <figcaption style="text-align: center; background: none; padding: 0; border: none; font-size: 0.9em;">
-  Figure 10. Simulink model of the ball and beam system.
+  Figure 10. Root locus plot of the ball and beam system.
 </figcaption>
 </figure>
 
 
 <figure style="text-align: center;">
   <img src="{{ site.baseurl }}/images/ballAndBeam/ball_and_beam_closedLoopResponseKp6.png"
-       alt="Simulink model of the ball and beam system"
+       alt="Step response plot of the closed-loop system for a proportional compensator with gain $K_P = 6$."
        style="width:40%;">
 <figcaption style="text-align: center; background: none; padding: 0; border: none; font-size: 0.9em;">
-  Figure 11. Simulink model of the ball and beam system.
+  Figure 11. Step response plot of the closed-loop system for a proportional compensator with gain $K_P = 6$.
 </figcaption>
 </figure>
 
@@ -147,47 +147,47 @@ To set the sampling time and the solver type, right click on the model workspace
 
 <figure style="text-align: center;">
   <img src="{{ site.baseurl }}/images/ballAndBeam/ball_and_beam_PIDTuner.png"
-       alt="Simulink model of the ball and beam system"
+       alt="Tuning the control gains using PID Tuner."
        style="width:70%;">
 <figcaption style="text-align: center; background: none; padding: 0; border: none; font-size: 0.9em;">
-  Figure 12. Simulink model of the ball and beam system.
+  Figure 12. Tuning the control gains using PID Tuner.
 </figcaption>
 </figure>
 
 <figure style="text-align: center;">
   <img src="{{ site.baseurl }}/images/ballAndBeam/ball_and_beam_PDClosedLoop.png"
-       alt="Simulink model of the ball and beam system"
+       alt="Implementing the closed-loop system with a PD controller in the SIMULINK environment."
        style="width:70%;">
 <figcaption style="text-align: center; background: none; padding: 0; border: none; font-size: 0.9em;">
-  Figure 13. Simulink model of the ball and beam system.
+  Figure 13. Implementing the closed-loop system with a PD controller in the SIMULINK environment.
 </figcaption>
 </figure>
 
 
 <figure style="text-align: center;">
   <img src="{{ site.baseurl }}/images/ballAndBeam/ball_and_beam_PDOutput.png"
-       alt="Simulink model of the ball and beam system"
+       alt="Step response plot of the closed-loop system for a PD controller with gains $K_P=7$ and $K_D=5.5$"
        style="width:40%;">
 <figcaption style="text-align: center; background: none; padding: 0; border: none; font-size: 0.9em;">
-  Figure 14. Simulink model of the ball and beam system.
+  Figure 14. Step response plot of the closed-loop system for a PD controller with gains $K_P=7$ and $K_D=5.5$.
 </figcaption>
 </figure>
 
 <figure style="text-align: center;">
   <img src="{{ site.baseurl }}/images/ballAndBeam/ball_and_beam_PID_BlockDiagram.png"
-       alt="Simulink model of the ball and beam system"
+       alt="Implementing the closed-loop system with a PID controller in the SIMULINK environment."
        style="width:70%;">
 <figcaption style="text-align: center; background: none; padding: 0; border: none; font-size: 0.9em;">
-  Figure 15. Simulink model of the ball and beam system.
+  Figure 15. Implementing the closed-loop system with a PID controller in the SIMULINK environment.
 </figcaption>
 </figure>
 
 
 <figure style="text-align: center;">
   <img src="{{ site.baseurl }}/images/ballAndBeam/ball_and_beam_Output_PID.png"
-       alt="Simulink model of the ball and beam system"
+       alt="Step response plot of the closed-loop system for a PID controller with gains $K_P=15.1$, $K_D=8.4$ and $K_I=2.9$"
        style="width:40%;">
 <figcaption style="text-align: center; background: none; padding: 0; border: none; font-size: 0.9em;">
-  Figure 16. Simulink model of the ball and beam system.
+  Figure 16. Step response plot of the closed-loop system for a PID controller with gains $K_P=15.1$, $K_D=8.4$ and $K_I=2.9$.
 </figcaption>
 </figure>
