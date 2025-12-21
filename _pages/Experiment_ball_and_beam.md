@@ -188,6 +188,6 @@ To set the sampling time and the solver type, right click on the model workspace
        alt="Step response plot of the closed-loop system for a PID controller with gains $K_P=15.1$, $K_D=8.4$ and $K_I=2.9$"
        style="width:40%;">
 <figcaption style="text-align: center; background: none; padding: 0; border: none; font-size: 0.9em;">
-  Figure 16. Step response plot of the closed-loop system for a PID controller with gains $K_P=15.1$, $K_D=8.4$ and $K_I=2.9$.
+  Figure 16. Step response plot of the closed-loop system for a PID controller with gains \(K_P = 15.1\), \(K_D = 8.4\), and \(K_I = 2.9\).
 </figcaption>
 </figure>
