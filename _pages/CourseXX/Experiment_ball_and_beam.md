@@ -1,7 +1,7 @@
 ---
 title: "Ball and Beam Experiment"
 layout: default
-permalink: /experiments/Experiment_ball_and_beam/
+permalink: /CourseXX/experiments/Experiment_ball_and_beam/
 mathjax: true
 ---
 <!-- Justify the text -->

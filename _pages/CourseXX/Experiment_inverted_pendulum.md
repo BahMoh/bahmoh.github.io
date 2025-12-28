@@ -1,7 +1,8 @@
 ---
 title: "Inverted Pendulum Experiment"
 layout: default
-permalink: /experiments/Experiment_inverted_pendulum/
+permalink: /CourseXX/experiments/Experiment_inverted_pendulum/
+mathjax: true
 ---
 
 
