@@ -39,7 +39,7 @@ This system is commonly used for:
 To simulate the **ball and beam** system, the MATLAB and Simulink software environment is used. In the first step, after opening a Blank Model in the Simulink environment of MATLAB, the initial simulation settings must be configured. These include the sampling time, the solver type, and the initialization of the system model parameters.
 
 To set the sampling time and the solver type, right click on the model workspace and select the *Model Configuration Parameters* option. In the *Solver Selection* section, set the solver type to *Fixed Step* and assign the sampling time as Ts. Figure 1 provides a suitable guide for performing these steps.
-
+</div>
 
 <figure style="text-align: center;">
   <img src="{{ site.baseurl }}/images/ballAndBeam/ball_and_beam_configuration.png"
@@ -50,7 +50,9 @@ To set the sampling time and the solver type, right click on the model workspace
 </figcaption>
 </figure>
 
+<div class="content-justify">
 Next, it is necessary to enter the initial values of the system model. To do this, right-click on the canvas, open the Model Properties, go to the Callbacks section, and enter the parameters in the InitFcn field as shown in Figure 2.
+</div>
 
 <figure style="text-align: center;">
   <img src="{{ site.baseurl }}/images/ballAndBeam/ball_and_beam_SIMOpenLoop.png"
@@ -61,7 +63,9 @@ Next, it is necessary to enter the initial values of the system model. To do thi
 </figcaption>
 </figure>
 
+<div class="content-justify">
 It is necessary to use the SIMULINK library to add the components required for implementing the model, providing the appropriate input, and displaying the system output. For this purpose, in the Library Browser, under the Continuous, Source, and Sink sections, you can add the transfer function, step input, and output display (Scope) to the simulation environment, respectively. Figure 3 shows this section.
+</div>
 
 <figure style="text-align: center;">
   <img src="{{ site.baseurl }}/images/ballAndBeam/ball_and_beam_SimulinkLibraryBrowser.png"
@@ -72,7 +76,9 @@ It is necessary to use the SIMULINK library to add the components required for i
 </figcaption>
 </figure>
 
+<div class="content-justify">
 After selecting the required components, we connect them to each other as shown in Figure 4. Then, by double-clicking on the TransferFcn block, we enter the parameters of the system’s linearized model into it.
+</div>
 
 <figure style="text-align: center;">
   <img src="{{ site.baseurl }}/images/ballAndBeam/ball_and_beam_blockDiagram.png"
@@ -92,7 +98,9 @@ After selecting the required components, we connect them to each other as shown 
 </figcaption>
 </figure>
 
+<div class="content-justify">
 To plot the step response of this system, we use the Step block. The parameters of this block are set according to the configuration shown in Figure 6:
+</div>
 
 <figure style="text-align: center;">
   <img src="{{ site.baseurl }}/images/ballAndBeam/ball_and_beam_blockParameterTheta.png"
@@ -103,7 +111,9 @@ To plot the step response of this system, we use the Step block. The parameters 
 </figcaption>
 </figure>
 
+<div class="content-justify">
 As observed, in the open-loop system simulation, we have considered the reference input as an angular position of 0.2 radians. Additionally, to plot the step response of the system and record the data, we have used the Scope and To Workspace blocks. Using the To Workspace block, the output samples along with the simulation time can be imported into MATLAB’s workspace, allowing the output plot to be generated with higher quality. The settings for this block are shown in Figure 7.
+</div>
 
 <figure style="text-align: center;">
   <img src="{{ site.baseurl }}/images/ballAndBeam/ball_and_beam_blockParameterOutput.png"
@@ -114,7 +124,9 @@ As observed, in the open-loop system simulation, we have considered the referenc
 </figcaption>
 </figure>
 
+<div class="content-justify">
 To run the simulation, after setting the simulation time in the Stop Time field, we start the simulation by selecting the Run option. Additionally, to plot the output, we execute the following commands in the MATLAB Editor environment:
+</div>
 
 ```bash
 Time = out.R_Out.time;
@@ -129,7 +141,9 @@ title('Output Chart')
 legend('R')
 ```
 
+<div class="content-justify">
 The open-loop system output plot for a step input with an amplitude of 0.2 is shown in Figure 8:
+</div>
 
 <figure style="text-align: center;">
   <img src="{{ site.baseurl }}/images/ballAndBeam/ball_and_beam_Output.png"
@@ -140,9 +154,11 @@ The open-loop system output plot for a step input with an amplitude of 0.2 is sh
 </figcaption>
 </figure>
 
+<div class="content-justify">
 Since the open-loop system model includes two pure integrators, as expected, the open-loop system output for a step input has a parabolic shape.
 
 Next, we intend to simulate the closed-loop system. For this purpose, it is necessary to add a summing block (Sum) to the simulation. The closed-loop system along with the proportional controller is shown:
+</div>
 
 <figure style="text-align: center;">
   <img src="{{ site.baseurl }}/images/ballAndBeam/ball_and_beam_blockDiagramClosedLoop.png"
@@ -153,7 +169,9 @@ Next, we intend to simulate the closed-loop system. For this purpose, it is nece
 </figcaption>
 </figure>
 
+<div class="content-justify">
 On the other hand, we know that when the open-loop system has two pure integrators, it cannot be controlled using only a single gain, because in this case the closed-loop poles lie on the imaginary axis and the system becomes oscillatory. This can also be analyzed by plotting the root locus. To plot the root locus, we use the _rlocus_ command in MATLAB. The following code is used to plot the root locus of the ball and beam system:
+</div>
 
 ```bash
 s = tf('s');
@@ -165,7 +183,10 @@ hold on
 rlocus(-G, 'r')
 legend('k>0', 'k<0')
 ```
+
+<div class="content-justify">
 By running the above program, the root locus plot of this system is generated as shown in Figure 10:
+</div>
 
 <figure style="text-align: center;">
   <img src="{{ site.baseurl }}/images/ballAndBeam/ball_and_beam_RootLocus.png"
@@ -176,9 +197,12 @@ By running the above program, the root locus plot of this system is generated as
 </figcaption>
 </figure>
 
+<div class="content-justify">
 As observed, for positive gains, the closed-loop poles move along the imaginary axis, causing the system to oscillate. For negative gains, one of the closed-loop poles lies on the right-hand side of the imaginary axis, making the system unstable. Therefore, it is clear that this system cannot be controlled using only a single gain.
 
 Figure 11 shows the closed-loop system response for a proportional controller with a gain of $K_P = 6$.
+</div>
+
 <figure style="text-align: center;">
   <img src="{{ site.baseurl }}/images/ballAndBeam/ball_and_beam_closedLoopResponseKp6.png"
        alt="Step response plot of the closed-loop system for a proportional compensator with gain $K_P = 6$."
@@ -188,7 +212,9 @@ Figure 11 shows the closed-loop system response for a proportional controller wi
 </figcaption>
 </figure>
 
+<div class="content-justify">
 As observed, the closed-loop system response, as expected, is oscillatory, whereas the control objective was for the output to reach 0.2. Therefore, to achieve this control objective, it is necessary to use a PD or PID controller. Next, we intend to implement the closed-loop system with these two controllers. For designing the controller, MATLAB toolboxes such as PID Tuner or _sisotool_ can be used. For our work, we use PID Tuner. To do this, first open the PID Tuner from the _APPs_ section, and then define the system model using the following commands and import it into the PID Tuner toolbox.
+</div>
 
 ```bash
 g = -9.8; %Gravitional acceleration (m/s^2).
@@ -202,7 +228,9 @@ s = tf('s');
 G = -m*g*d/(L*(m+J/(R^2))*s^2)
 ```
 
+<div class="content-justify">
 After setting the parameters, the PD controller gains are obtained as $K_P=7$ and $K_D=5.5$.
+</div>
 
 <figure style="text-align: center;">
   <img src="{{ site.baseurl }}/images/ballAndBeam/ball_and_beam_PIDTuner.png"
@@ -213,7 +241,9 @@ After setting the parameters, the PD controller gains are obtained as $K_P=7$ an
 </figcaption>
 </figure>
 
+<div class="content-justify">
 After designing the proportional-derivative (PD) controller, we proceed to implement it in the SIMULINK environment. Since a pure differentiator cannot be used in a PD controller (due to its non-causal nature), a fast pole must also be added. Figure 13 shows the block diagram of the closed-loop system with the implemented PD controller.
+</div>
 
 <figure style="text-align: center;">
   <img src="{{ site.baseurl }}/images/ballAndBeam/ball_and_beam_PDClosedLoop.png"
@@ -224,7 +254,9 @@ After designing the proportional-derivative (PD) controller, we proceed to imple
 </figcaption>
 </figure>
 
+<div class="content-justify">
 By running the simulation of the closed-loop system with the designed PD controller, the step response of the system for a reference input of 0.2 is obtained as shown in Figure 14.
+</div>
 
 <figure style="text-align: center;">
   <img src="{{ site.baseurl }}/images/ballAndBeam/ball_and_beam_PDOutput.png"
@@ -235,9 +267,11 @@ By running the simulation of the closed-loop system with the designed PD control
 </figcaption>
 </figure>
 
+<div class="content-justify">
 Based on the plot in Figure 14, the response has an overshoot of approximately 14.6% and a settling time of about 2.2 seconds.
 
 Next, using PID Tuner, we design a PID controller. Accordingly, the suitable control gains are obtained as $K_P=15.1$, $K_D=8.4,$ and $K_I=2.9$. We then implement the closed-loop system with the PID controller as shown. Figure 15 presents the block diagram of the closed-loop system with the PID controller.
+</div>
 
 <figure style="text-align: center;">
   <img src="{{ site.baseurl }}/images/ballAndBeam/ball_and_beam_PID_BlockDiagram.png"
@@ -248,7 +282,9 @@ Next, using PID Tuner, we design a PID controller. Accordingly, the suitable con
 </figcaption>
 </figure>
 
+<div class="content-justify">
 By running the simulation of the closed-loop system with the designed PID controller, the step response of the system for a reference input of 0.2 is obtained as shown in Figure 16.
+</div>
 
 <figure style="text-align: center;">
   <img src="{{ site.baseurl }}/images/ballAndBeam/ball_and_beam_Output_PID.png"
@@ -259,5 +295,6 @@ By running the simulation of the closed-loop system with the designed PID contro
 </figcaption>
 </figure>
 
+<div class="content-justify">
 Based on the plot in Figure 16, the response exhibits an overshoot of approximately 13.1% and a settling time of about 1.81 seconds. As observed, when using the PID controller, the system's overshoot is reduced and the response speed increases; however, adding the integral component raises the overall cost of the controller. Therefore, to achieve the desired response, the PD controller alone is sufficient.
 </div>
