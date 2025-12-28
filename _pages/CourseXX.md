@@ -9,7 +9,6 @@ permalink: /CourseXX/
     <ul class="nav navbar-nav">
       <li><a href="{{ site.url }}{{ site.baseurl }}/CourseXX/Experiment_ball_and_beam">Ball and Beam</a></li>
       <li><a href="{{ site.url }}{{ site.baseurl }}/CourseXX/Experiment_inverted_pendulum">Inverted Pendulum</a></li>
-      <!-- <li><a href="{{ site.url }}{{ site.baseurl }}/CourseXX/exp3">Experiment 3</a></li> -->
     </ul>
   </div>
 </nav>
