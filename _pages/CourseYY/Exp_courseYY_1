@@ -17,15 +17,15 @@ mathjax: true
   <a href="/CourseYY/Exp_courseYY_2/">Exp courseYY 2</a>
 </li>
 
-<li class="{% if page.url == '/CourseYY/Experiment_parallel_robot/' %}active{% endif %}">
+<li class="{% if page.url == '/CourseYY/Exp_courseYY_3/' %}active{% endif %}">
   <a href="/CourseYY/Exp_courseYY_3/">Exp courseYY 3</a>
 </li>
 
-<li class="{% if page.url == '/CourseYY/Experiment_XX/' %}active{% endif %}">
+<li class="{% if page.url == '/CourseYY/Exp_courseYY_4/' %}active{% endif %}">
   <a href="/CourseYY/Exp_courseYY_4/">Exp courseYY 4</a>
 </li>
 
-<li class="{% if page.url == '/CourseYY/Experiment_YY/' %}active{% endif %}">
+<li class="{% if page.url == '/CourseYY/Exp_courseYY_5/' %}active{% endif %}">
   <a href="/CourseYY/Exp_courseYY_5/">Exp courseYY 5</a>
 </li>
 

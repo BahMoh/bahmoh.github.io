@@ -8,9 +8,9 @@ permalink: /CourseYY/
 <ul class="nav navbar-nav">
 <li><a href="/CourseYY/Exp_courseYY_1/">Exp courseYY 1</a></li>
 <li><a href="/CourseYY/Exp_courseYY_2/">Exp courseYY 2</a></li>
-<li><a href="/CourseYY/Experiment_parallel_robot/">Parallel Robot</a></li>
-<li><a href="/CourseYY/Experiment_XX/">EXP XX</a></li>
-<li><a href="/CourseYY/Experiment_YY/">EXP YY</a></li>
+<li><a href="/CourseYY/Exp_courseYY_3/">Exp courseYY 3</a></li>
+<li><a href="/CourseYY/Exp_courseYY_4/">Exp courseYY 4</a></li>
+<li><a href="/CourseYY/Exp_courseYY_5/">Exp courseYY 5</a></li>
 </ul>
 </div>
 </nav>
