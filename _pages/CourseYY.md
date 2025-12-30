@@ -3,7 +3,7 @@ layout: default
 title: "Course YY" 
 permalink: /CourseYY/
 ---
-<nav class="navbar navbar-default navbar-fixed-top">
+<nav class="navbar navbar-default">
 <div class="container-fluid">
 <ul class="nav navbar-nav">
 <li><a href="/CourseYY/Exp_courseYY_1/">Exp courseYY 1</a></li>

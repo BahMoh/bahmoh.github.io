@@ -3,7 +3,7 @@ layout: default
 title: "Course XX"
 permalink: /CourseXX/
 ---
-<nav class="navbar navbar-default navbar-fixed-top">
+<nav class="navbar navbar-default">
 <div class="container-fluid">
 <ul class="nav navbar-nav">
 <li><a href="/CourseXX/Experiment_ball_and_beam/">Ball and Beam</a></li>

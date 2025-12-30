@@ -4,7 +4,7 @@ layout: default
 permalink: /CourseXX/Experiment_ball_and_beam/
 mathjax: true
 ---
-<nav class="navbar navbar-default navbar-fixed-top">
+<nav class="navbar navbar-default">
 <div class="container-fluid">
 <ul class="nav navbar-nav">
 
