@@ -210,26 +210,26 @@ figcaption {
 }
 </style>
 
-<!-- ===== ACTIVE SECTION TRACKING ===== -->
+
 <script>
-document.addEventListener("scroll", () => {
-  const sections = document.querySelectorAll("h2[id], h3[id]");
-  const links = document.querySelectorAll(".toc-list a");
+document.addEventListener("scroll", function () {
+  var sections = document.querySelectorAll("h2[id], h3[id]");
+  var links = document.querySelectorAll(".toc-list a");
 
-  let current = "";
+  var current = "";
 
-  sections.forEach(section => {
-    const sectionTop = section.offsetTop - 80;
-    if (window.scrollY >= sectionTop) {
-      current = section.getAttribute("id");
+  for (var i = 0; i < sections.length; i++) {
+    var sectionTop = sections[i].offsetTop - 80;
+    if (window.pageYOffset >= sectionTop) {
+      current = sections[i].getAttribute("id");
     }
-  });
+  }
 
-  links.forEach(link => {
-    link.classList.remove("active");
-    if (link.getAttribute("href") === `#${current}`) {
-      link.classList.add("active");
+  for (var j = 0; j < links.length; j++) {
+    links[j].classList.remove("active");
+    if (links[j].getAttribute("href") === "#" + current) {
+      links[j].classList.add("active");
     }
-  });
+  }
 });
 </script>
