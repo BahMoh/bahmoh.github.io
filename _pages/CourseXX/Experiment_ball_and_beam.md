@@ -2,6 +2,7 @@
 title: "Ball and Beam Experiment"
 layout: default
 permalink: /CourseXX/Experiment_ball_and_beam/
+toc: toc_ball_and_beam.html
 mathjax: true
 ---
 <nav class="navbar navbar-default">
@@ -32,17 +33,7 @@ mathjax: true
 </div>
 </nav>
 
-<div class="toc-container">
-  <div class="toc-title">On this page</div>
-  <ul class="toc-list">
-    <li><a href="#ball-and-beam-system">Ball and Beam System</a></li>
-    <li><a href="#system-description">System Description</a></li>
-    <li><a href="#importance">Importance in Control Engineering</a></li>
-    <li><a href="#applications">Applications</a></li>
-    <li><a href="#sim-setup">Simulation Setup in MATLAB and Simulink</a></li>
-  </ul>
-</div>
-
+<!-- BEWARE that If you are changing the content here, you must change the toc_ball_and_beam.html as well -->
 
 <!-- Justify the text -->
 <div class="content-justify">

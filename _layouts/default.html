@@ -8,7 +8,9 @@
     {% include header.html %}
 
     <!-- TOC: fixed-position, OUTSIDE Bootstrap grid -->
-    {% include toc.html %}
+    {% if page.toc %}
+      {% include {{ page.toc }} %}
+    {% endif %}
 
     <!-- Main page layout -->
     <div class="container-fluid">
