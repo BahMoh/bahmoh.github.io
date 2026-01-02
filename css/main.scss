@@ -142,25 +142,20 @@ figcaption {
   margin-bottom: 1rem;
 }
 
-<style>
-/* Table of contents container */
+// TOC (table of content)
 .toc-container {
   position: fixed;
-  top: 64px;            /* navbar height */
+  top: 64px;
   bottom: 0;
   left: 0;
-
   width: 260px;
   padding: 20px;
-
-  background-color: #868686;
+  background-color: #f3f4f6;
   border-right: 1px solid #e5e7eb;
-
   overflow-y: auto;
   z-index: 1000;
 }
 
-/* TOC title */
 .toc-title {
   font-size: 13px;
   font-weight: 600;
@@ -169,7 +164,6 @@ figcaption {
   margin-bottom: 12px;
 }
 
-/* TOC list */
 .toc-list {
   list-style: none;
   padding: 0;
@@ -180,14 +174,12 @@ figcaption {
   margin: 12px 0;
 }
 
-/* TOC links */
 .toc-list a {
   display: block;
   font-size: 14px;
   font-weight: 500;
   color: #1f2937;
   text-decoration: none;
-  line-height: 1.4;
   padding-left: 10px;
   border-left: 3px solid transparent;
 }
@@ -196,40 +188,14 @@ figcaption {
   color: #2563eb;
 }
 
-/* Active section */
 .toc-list a.active {
   color: #2563eb;
   font-weight: 600;
   border-left-color: #2563eb;
 }
 
-/* Push main content to the right */
+/* Push page content right */
 .container,
 .main-content {
   margin-left: 280px;
 }
-</style>
-
-
-<script>
-document.addEventListener("scroll", function () {
-  var sections = document.querySelectorAll("h2[id], h3[id]");
-  var links = document.querySelectorAll(".toc-list a");
-
-  var current = "";
-
-  for (var i = 0; i < sections.length; i++) {
-    var sectionTop = sections[i].offsetTop - 80;
-    if (window.pageYOffset >= sectionTop) {
-      current = sections[i].getAttribute("id");
-    }
-  }
-
-  for (var j = 0; j < links.length; j++) {
-    links[j].classList.remove("active");
-    if (links[j].getAttribute("href") === "#" + current) {
-      links[j].classList.add("active");
-    }
-  }
-});
-</script>

@@ -43,6 +43,7 @@ mathjax: true
   </ul>
 </div>
 
+
 <!-- Justify the text -->
 <div class="content-justify">
 
