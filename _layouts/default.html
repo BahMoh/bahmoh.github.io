@@ -2,19 +2,30 @@
 <html>
 
   {% include head.html %}
-<script src="{{ '/js/toc.js' | relative_url }}"></script>
 
   <body>
 
     {% include header.html %}
 
+    <!-- TOC: fixed-position, OUTSIDE Bootstrap grid -->
+    {% include toc.html %}
+
+    <!-- Main page layout -->
     <div class="container-fluid">
       <div class="row">
-        {{ content }}
+
+        <!-- Main content column -->
+        <div class="col-md-9 offset-md-3 page-with-toc">
+          {{ content }}
+        </div>
+
       </div>
     </div>
 
     {% include footer.html %}
+
+    <!-- TOC active-section script -->
+    <script src="{{ '/assets/js/toc.js' | relative_url }}"></script>
 
   </body>
 
