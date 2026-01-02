@@ -9,7 +9,7 @@
 
     <!-- TOC: fixed-position, OUTSIDE Bootstrap grid -->
     {% if page.toc %}
-      {% include {{ page.toc }} %}
+      {% include {{ page.toc | strip }} %}
     {% endif %}
 
     <!-- Main page layout -->
