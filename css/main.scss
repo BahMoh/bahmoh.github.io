@@ -199,8 +199,3 @@ figcaption {
   margin-left: 280px;
 }
 
-/* Footer on top if a TOC exists */
-.has-toc #footer {
-  position: relative;  // keep it in normal flow
-  z-index: 1010;       // higher than TOC's 1000
-}
