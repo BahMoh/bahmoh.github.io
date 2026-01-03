@@ -195,7 +195,8 @@ figcaption {
   border-left-color: #2563eb;
 }
 
-/* Push page content right */
+/* Push page content right */ 
+// If the page has toc change the content to the right.
 .has-toc .page-with-toc {
   margin-left: 280px;
 }
